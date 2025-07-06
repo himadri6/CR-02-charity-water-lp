@@ -86,28 +86,32 @@ section {
 }
 
 /* Story Section Styles */
+
+/* Show the story section as a white rectangle */
 .story {
-  display: none; /* Hide the Our Story section */
+  display: none; 
 }
 
 /* Impact Section Styles */
 .impact-story {
-  background-color: #fff;      /* Keep the background white */
+  background-color: #fff;      /* White background */
   border-radius: 12px;         /* Rounded corners */
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
-  margin: 24px 10px;
-  padding: 48px 24px;          /* Increase padding to make it bigger */
-  max-width: 1000px;           /* Make the box wider */
-  width: 90%;                  /* Responsive width */
-  margin-left: auto;           /* Center the box horizontally */
-  margin-right: auto;
+  padding: 48px 12px;          /* More padding for a bigger box */
+  max-width: 1400px;           /* Make the box wider to fit more images */
+  width: 99%;                  /* Almost full width of the page */
+  margin: 24px auto;           /* Space above/below and center horizontally */
+  text-align: center;          /* Center the content inside */
 }
 
-/* Add accent color to section headings */
-h2 {
-  color: #2E9DF7; /* Primary blue */
-  margin-top: 0;
+/* Style the OUR STORY heading inside the impact section */
+.impact-story h2 {
+  color: #2E9DF7;        /* Brand blue color */
+  text-align: center;    /* Center the heading */
+  margin-top: 0;         /* Remove extra space above */
+  margin-bottom: 24px;   /* Space below the heading */
   font-weight: bold;
+  font-size: 2em;
 }
 
 /* Call-to-Action Section Styles */
@@ -118,13 +122,25 @@ h2 {
   padding: 30px 20px;
 }
 
-/* Style the impact story image */
-.impact-image {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+/* Style for all impact images */
+.impact-image,
+.impact-content .impact-image {
+  width: 100%;           /* Make the image fill its container */
+  max-width: 600px;      /* Make each image bigger */
+  border-radius: 10px;   /* Rounded corners */
+  margin-bottom: 0;      /* No extra space below */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Soft shadow */
+}
+
+/* Add space between images in a row */
+.impact-content .image-hover-container {
+  display: inline-block; /* Show images in a row */
+  margin-right: 24px;    /* More space between images */
+}
+
+/* Remove right margin from the last image */
+.impact-content .image-hover-container:last-child {
+  margin-right: 0;
 }
 
 /* Donate Button Styles */
@@ -223,5 +239,77 @@ section {
     margin: 0;         /* Remove default margin */
     max-width: 100%;   /* Make sure the image is responsive */
     height: auto;      /* Keep the image's aspect ratio */
+  }
+}
+
+/* Beginner-friendly image flip effect on hover to show text */
+
+/* Container for each image and its hover text */
+.image-hover-container {
+  position: relative;      /* Needed for absolute positioning */
+  display: inline-block;   /* Show images in a row */
+  width: 100%;             /* Make container fill available width */
+  max-width: 600px;        /* Match image size */
+  perspective: 800px;      /* Adds 3D effect for the flip */
+  vertical-align: top;     /* Align containers at the top */
+  margin-bottom: 16px;     /* Space below each image on small screens */
+}
+
+/* Inner wrapper for flipping */
+.image-hover-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s; /* Smooth flip */
+  transform-style: preserve-3d;
+}
+
+/* Flip the inner wrapper on hover */
+.image-hover-container:hover .image-hover-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front of the card (the image) */
+.image-hover-front,
+.image-hover-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back when facing front */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Show the image on the front */
+.image-hover-front img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+}
+
+/* Back of the card (the text) */
+.image-hover-back {
+  background: rgba(46, 157, 247, 0.85); /* Blue background */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  transform: rotateY(180deg); /* Start flipped */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive: Make sure flip containers fit on small screens */
+@media (max-width: 700px) {
+  .image-hover-container {
+    max-width: 95vw;
+  }
+  .image-hover-front img {
+    max-width: 95vw;
   }
 }
