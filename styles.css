@@ -20,130 +20,147 @@ Fonts:
 
 /* 
   Charity: Water Landing Page Styles
-  This CSS uses the provided color palette and beginner-friendly styles.
+  This CSS uses a simple, beginner-friendly approach.
+  Each section is clearly commented to help you learn!
 */
 
+/* === PAGE BACKGROUND AND FONTS === */
 /* Set up the main font and background color for the whole page */
 body {
   background-color: #D7E4E0; /* Soft blue-green background for a calm, clean look */
-  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #222;
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif; /* Use friendly, modern fonts */
+  margin: 0;    /* Remove default margin */
+  padding: 0;   /* Remove default padding */
+  color: #222;  /* Set default text color */
 }
 
+/* === SECTION STYLES === */
 /* Add a slight shadow and rounded corners to each section for depth */
 section {
   background: #fff; /* White background for sections */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
+  border-radius: 12px; /* Rounded corners for a friendly look */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow for depth */
   margin: 24px 10px; /* Space between sections */
-  padding: 24px 16px;
+  padding: 24px 16px; /* Padding inside each section */
+  margin-bottom: 20px; /* Extra space below each section */
 }
 
-/* Hero Section Styles */
+/* === HERO SECTION === */
+/* Styles for the top banner with the main message and background image */
 .hero {
-  background-image: url('img/headlinepic.png'); /* Use your headline image */
+  background-image: url('img/headlinepic.png'); /* Main banner image */
   background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;/* Do not repeat the image */
   width: 100%;                 /* Full width */
   height: 35vh;                /* Make the hero section shorter */
   margin: 0;                   /* No margin */
-  padding: 30px;                  /* No padding */
-  border-radius: 0;            /* No rounded corners */
-  box-shadow: none;            /* No shadow */
+  padding: 30px;               /* Padding inside the hero section */
+  border-radius: 0;            /* No rounded corners for the hero */
+  box-shadow: none;            /* No shadow for the hero */
   position: relative;          /* For layout */
   display: flex;               /* Use flexbox to center content */
   flex-direction: column;      /* Stack items vertically */
   justify-content: center;     /* Center content vertically */
   align-items: center;         /* Center content horizontally */
-  /* The image will now appear shorter and content is centered from all sides */
 }
 
-/* Make the headline bold, black, and centered */
+/* Style the main headline in the hero section */
 .hero h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
-  text-shadow: none;         /* Remove shadow for a clean look */
-  color: #000;               /* Make the headline black */
-  text-align: center;        /* Center the headline horizontally */
-  width: 100%;
-  margin: 0;
+  font-size: 2.5em;        /* Large text for the headline */
+  font-weight: bold;       /* Make the headline bold */
+  letter-spacing: 1px;     /* Add space between letters */
+  margin-bottom: 15px;     /* Space below the headline */
+  text-shadow: none;       /* No shadow for a clean look */
+  color: #000;             /* Black text */
+  text-align: center;      /* Center the headline horizontally */
+  width: 100%;             /* Take up full width */
+  margin: 0;               /* Remove default margin */
 }
 
-/* Style the subheadline: black and centered */
+/* Style the subheadline in the hero section */
 .hero p {
-  font-size: 1.2em;
-  margin-top: 0;
-  text-shadow: none;         /* Remove shadow for a clean look */
-  color: #000;               /* Make the subheadline black */
-  text-align: center;        /* Center the subheadline horizontally */
-  width: 100%;
-  margin: 0;
+  font-size: 1.2em;        /* Slightly larger text */
+  margin-top: 0;           /* Remove space above */
+  text-shadow: none;       /* No shadow for a clean look */
+  color: #000;             /* Black text */
+  text-align: center;      /* Center the subheadline */
+  width: 100%;             /* Take up full width */
+  margin: 0;               /* Remove default margin */
 }
 
-/* Story Section Styles */
-
-/* Show the story section as a white rectangle */
-.story {
-  display: none; 
-}
-
-/* Impact Section Styles */
+/* === IMPACT STORY SECTION === */
+/* Styles for the white rectangle that holds the impact images */
 .impact-story {
   background-color: #fff;      /* White background */
   border-radius: 12px;         /* Rounded corners */
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
-  padding: 48px 12px;          /* More padding for a bigger box */
-  max-width: 1400px;           /* Make the box wider to fit more images */
+  padding: 48px 12px;          /* Padding inside the box */
+  max-width: 1400px;           /* Make the box wide to fit images */
   width: 99%;                  /* Almost full width of the page */
-  margin: 24px auto;           /* Space above/below and center horizontally */
+  margin: 24px auto;           /* Center the box and add space above/below */
   text-align: center;          /* Center the content inside */
 }
 
-/* Style the OUR STORY heading inside the impact section */
+/* Style the "OUR STORY" heading inside the impact section */
 .impact-story h2 {
   color: #2E9DF7;        /* Brand blue color */
   text-align: center;    /* Center the heading */
   margin-top: 0;         /* Remove extra space above */
   margin-bottom: 24px;   /* Space below the heading */
-  font-weight: bold;
-  font-size: 2em;
+  font-weight: bold;     /* Make the heading bold */
+  font-size: 2em;        /* Make the heading larger */
 }
 
-/* Call-to-Action Section Styles */
+/* === CALL TO ACTION SECTION === */
+/* Styles for the yellow donation section at the bottom */
 .call-to-action {
-  background-color: #FFC907; /* Primary Yellow */
-  color: #222;
-  text-align: center;
-  padding: 30px 20px;
+  background-color: #FFC907; /* Bright yellow background */
+  color: #222;               /* Dark text for contrast */
+  text-align: center;        /* Center the content */
+  padding: 30px 20px;        /* Padding inside the section */
 }
 
-/* Style for all impact images */
-.impact-image,
-.impact-content .impact-image {
+/* === IMPACT IMAGES === */
+/* Make the impact images big and friendly for beginners */
+.impact-image {
   width: 100%;           /* Make the image fill its container */
-  max-width: 600px;      /* Make each image bigger */
+  max-width: 600px;      /* Maximum width for large screens */
+  height: 400px;         /* Set a bigger height */
+  object-fit: cover;     /* Crop the image to fill the area if needed */
+  border-radius: 10px;   /* Rounded corners for a friendly look */
+  margin-bottom: 0;      /* No extra space below */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Soft shadow for depth */
+}
+
+/* Keep all images the same size and add space between them */
+.impact-content .impact-image {
+  width: 100%;           /* Responsive width */
+  max-width: 420px;      /* Limit image size for layout */
   border-radius: 10px;   /* Rounded corners */
   margin-bottom: 0;      /* No extra space below */
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Soft shadow */
+  margin-right: 16px;    /* Space between images */
 }
 
-/* Add space between images in a row */
+/* Remove right margin from the last image so it aligns nicely */
+.impact-content .impact-image:last-child {
+  margin-right: 0;
+}
+
+/* Show images in a row and add space between them */
 .impact-content .image-hover-container {
   display: inline-block; /* Show images in a row */
-  margin-right: 24px;    /* More space between images */
+  margin-right: 20px;    /* Space between images */
 }
 
-/* Remove right margin from the last image */
+/* Remove right margin from the last image container */
 .impact-content .image-hover-container:last-child {
   margin-right: 0;
 }
 
-/* Donate Button Styles */
+/* === DONATE BUTTON === */
+/* Style the green donate button */
 .donate-button {
   display: inline-block;
   background-color: #4FCB53; /* Green */
@@ -166,26 +183,18 @@ section {
   transform: translateY(-2px) scale(1.04); /* Slight lift */
 }
 
-/* Add some spacing between sections */
-section {
-  margin-bottom: 20px;
-}
+/* === RESPONSIVE DESIGN === */
+/* Make the website look good on phones and computers */
 
-/* 
-  Media Queries for Responsive Design
-  Media queries help make your website look good on different screen sizes,
-  like phones (small screens) and computers (large screens).
-*/
-
-/* This media query applies styles when the screen is 600px wide or less (like on most phones) */
+/* On small screens (phones) */
 @media (max-width: 600px) {
-  /* Make hero section padding smaller on small screens */
+  /* Make hero section padding smaller */
   .hero {
     padding: 32px 8px;
     font-size: 1em;
   }
 
-  /* Make headline font size smaller so it fits on small screens */
+  /* Make headline font size smaller */
   .hero h1 {
     font-size: 1.4em;
   }
@@ -202,7 +211,7 @@ section {
     padding: 14px 8px;
   }
 
-  /* Make impact story image smaller and stack above the text */
+  /* Stack impact images vertically and make them smaller */
   .impact-content {
     display: block; /* Stack items vertically */
     text-align: center;
@@ -214,9 +223,9 @@ section {
   }
 }
 
-/* This media query applies styles when the screen is wider than 600px (like on tablets and computers) */
+/* On larger screens (tablets and computers) */
 @media (min-width: 601px) {
-  /* Show image and text side by side in the impact story */
+  /* Show impact images in a row and center them */
   .impact-content {
     display: flex;           /* Place items in a row */
     align-items: center;     /* Vertically center items */
@@ -225,13 +234,7 @@ section {
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
-  }
-
-  /* Style for the impact image to move it to the left */
-  .impact-content {
-    /* Use text-align to move the image to the left */
-    text-align: left; /* Align content to the left */
-    padding-left: 20px; /* Add a little space from the edge */
+    padding-left: 20px;      /* Add a little space from the edge */
   }
 
   .impact-image {
@@ -242,74 +245,34 @@ section {
   }
 }
 
-/* Beginner-friendly image flip effect on hover to show text */
+/* === IMAGE HOVER EFFECT === */
+/* Show text on top of the image when you hover for beginners */
 
 /* Container for each image and its hover text */
 .image-hover-container {
-  position: relative;      /* Needed for absolute positioning */
-  display: inline-block;   /* Show images in a row */
-  width: 100%;             /* Make container fill available width */
-  max-width: 600px;        /* Match image size */
-  perspective: 800px;      /* Adds 3D effect for the flip */
-  vertical-align: top;     /* Align containers at the top */
-  margin-bottom: 16px;     /* Space below each image on small screens */
+  position: relative; /* Needed for absolute positioning of the text */
+  display: inline-block; /* Keep images in a row */
 }
 
-/* Inner wrapper for flipping */
-.image-hover-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s; /* Smooth flip */
-  transform-style: preserve-3d;
-}
-
-/* Flip the inner wrapper on hover */
-.image-hover-container:hover .image-hover-inner {
-  transform: rotateY(180deg);
-}
-
-/* Front of the card (the image) */
-.image-hover-front,
-.image-hover-back {
+/* The text that appears on hover */
+.image-hover-text {
+  display: none; /* Hide by default */
   position: absolute;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;  /* Cover the whole image */
   height: 100%;
-  backface-visibility: hidden; /* Hide the back when facing front */
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-/* Show the image on the front */
-.image-hover-front img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 10px;
-  display: block;
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
-}
-
-/* Back of the card (the text) */
-.image-hover-back {
-  background: rgba(46, 157, 247, 0.85); /* Blue background */
+  background: rgba(46, 157, 247, 0.7); /* Blue overlay with transparency */
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
   text-align: center;
-  transform: rotateY(180deg); /* Start flipped */
-  padding: 20px;
+  padding-top: 40%; /* Move text to the middle vertically */
+  border-radius: 10px;
   box-sizing: border-box;
 }
 
-/* Responsive: Make sure flip containers fit on small screens */
-@media (max-width: 700px) {
-  .image-hover-container {
-    max-width: 95vw;
-  }
-  .image-hover-front img {
-    max-width: 95vw;
-  }
+/* Show the text when hovering over the container */
+.image-hover-container:hover .image-hover-text {
+  display: block;
 }
