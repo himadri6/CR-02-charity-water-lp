@@ -78,6 +78,16 @@ section {
   margin: 0;               /* Remove default margin */
 }
 
+/* Make the main headline pop out on hover */
+.hero h1:hover {
+  color: #2E9DF7;           /* Change text color to blue */
+  transform: scale(1.08);   /* Make the text a bit bigger */
+  transition: 
+    color 0.3s,             /* Smooth color change */
+    transform 0.3s;         /* Smooth scaling */
+  text-shadow: 0 4px 16px rgba(46, 157, 247, 0.18); /* Add a soft blue shadow */
+}
+
 /* Style the subheadline in the hero section */
 .hero p {
   font-size: 1.2em;        /* Slightly larger text */
@@ -87,6 +97,16 @@ section {
   text-align: center;      /* Center the subheadline */
   width: 100%;             /* Take up full width */
   margin: 0;               /* Remove default margin */
+}
+
+/* Make the subheadline pop out on hover */
+.hero p:hover {
+  color: #2E9DF7;           /* Change text color to blue */
+  transform: scale(1.05);   /* Make the text a bit bigger */
+  transition: 
+    color 0.3s, 
+    transform 0.3s;
+  text-shadow: 0 2px 8px rgba(46, 157, 247, 0.12); /* Add a soft blue shadow */
 }
 
 /* === IMPACT STORY SECTION === */
@@ -125,8 +145,8 @@ section {
 /* Make the impact images big and friendly for beginners */
 .impact-image {
   width: 100%;           /* Make the image fill its container */
-  max-width: 600px;      /* Maximum width for large screens */
-  height: 400px;         /* Set a bigger height */
+  max-width: 700px;      /* Increase the maximum width for large screens */
+  height: 350px;         /* Keep a good height for all images */
   object-fit: cover;     /* Crop the image to fill the area if needed */
   border-radius: 10px;   /* Rounded corners for a friendly look */
   margin-bottom: 0;      /* No extra space below */
@@ -135,8 +155,9 @@ section {
 
 /* Keep all images the same size and add space between them */
 .impact-content .impact-image {
-  width: 100%;           /* Responsive width */
-  max-width: 420px;      /* Limit image size for layout */
+  width: 400px;           /* Responsive width */
+  height: 400px;         /* Match the height above */
+  max-width: 700px;      /* Match the width above */
   border-radius: 10px;   /* Rounded corners */
   margin-bottom: 0;      /* No extra space below */
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10); /* Soft shadow */
@@ -260,8 +281,8 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;  /* Cover the whole image */
-  height: 100%;
+  width: 400px;  /* Cover the whole image */
+  height: 400px;
   background: rgba(46, 157, 247, 0.7); /* Blue overlay with transparency */
   color: #fff;
   font-size: 1.2em;
