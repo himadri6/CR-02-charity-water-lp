@@ -43,45 +43,64 @@ section {
 
 /* Hero Section Styles */
 .hero {
-  position: relative; /* Needed for overlay */
-  /* Set a background image that covers the whole section */
-  background-image: url('headline.png');
+  background-image: url('img/bg.png'); /* Use your headline image */
   background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
-  color: #fff;                 /* White text for contrast */
-  text-align: center;          /* Center the text */
-  padding: 60px 20px;          /* Add space above and below */
-  border-radius: 0 0 16px 16px; /* Only round bottom corners */
-
-  /* Add a dark overlay for better text readability */
-  /* This uses a simple linear-gradient overlay */
-  background-blend-mode: darken;
-  background-color: rgba(46, 157, 247, 0.45); /* Blue overlay */
+  width: 100%;                 /* Full width */
+  height: 35vh;                /* Make the hero section shorter */
+  margin: 0;                   /* No margin */
+  padding: 30px;                  /* No padding */
+  border-radius: 0;            /* No rounded corners */
+  box-shadow: none;            /* No shadow */
+  position: relative;          /* For layout */
+  display: flex;               /* Use flexbox to center content */
+  flex-direction: column;      /* Stack items vertically */
+  justify-content: center;     /* Center content vertically */
+  align-items: center;         /* Center content horizontally */
+  /* The image will now appear shorter and content is centered from all sides */
 }
 
-/* Make the headline bold and modern */
+/* Make the headline bold, white, and centered */
 .hero h1 {
   font-size: 2.5em;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 15px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
+  color: #fff;              /* Make the headline white */
+  text-align: center;       /* Center the headline horizontally */
+  width: 100%;
+  margin: 0;
 }
 
-/* Style the subheadline */
+/* Style the subheadline: white and centered */
 .hero p {
   font-size: 1.2em;
   margin-top: 0;
   text-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  color: #fff;              /* Make the subheadline white */
+  text-align: center;       /* Center the subheadline horizontally */
+  width: 100%;
+  margin: 0;
 }
 
 /* Story Section Styles */
 .story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
-  color: #222;
-  text-align: center;
-  padding: 30px 20px;
+  display: none; /* Hide the Our Story section */
+}
+
+/* Impact Section Styles */
+.impact-story {
+  background-color: #fff;      /* Keep the background white */
+  border-radius: 12px;         /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
+  margin: 24px 10px;
+  padding: 48px 24px;          /* Increase padding to make it bigger */
+  max-width: 1000px;           /* Make the box wider */
+  width: 90%;                  /* Responsive width */
+  margin-left: auto;           /* Center the box horizontally */
+  margin-right: auto;
 }
 
 /* Add accent color to section headings */
