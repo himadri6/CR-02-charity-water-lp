@@ -72,7 +72,7 @@ section {
   letter-spacing: 1px;     /* Add space between letters */
   margin-bottom: 15px;     /* Space below the headline */
   text-shadow: none;       /* No shadow for a clean look */
-  color: #000;             /* Black text */
+  color: #302B2D;             /* Black text */
   text-align: center;      /* Center the headline horizontally */
   width: 100%;             /* Take up full width */
   margin: 0;               /* Remove default margin */
@@ -94,7 +94,7 @@ section {
   font-size: 1.2em;        /* Slightly larger text */
   margin-top: 0;           /* Remove space above */
   text-shadow: none;       /* No shadow for a clean look */
-  color: #000;             /* Black text */
+  color: #302B2D;             /* Black text */
   text-align: center;      /* Center the subheadline */
   width: 100%;             /* Take up full width */
   margin: 0;               /* Remove default margin */
@@ -139,25 +139,28 @@ section {
 /* Styles for the yellow donation section at the bottom */
 .call-to-action {
   background-color: #FFC907; /* Bright yellow background */
-  color: #222;               /* Dark text for contrast */
+  color: #302B2D;               /* Dark text for contrast */
   text-align: center;        /* Center the content */
-  padding: 15px 10px;        /* Padding inside the section */
+  padding: 10px 10px;        /* Padding inside the section */
 }
 
 /* Style the call-to-action heading, subheading, and button with Avenir font */
 .call-to-action h2 {
   font-family: 'Avenir', Arial, sans-serif; /* Use Avenir for heading */
   font-size: 2.5em;
+  color:#302B2D
 }
 
 .call-to-action p {
   font-family: 'Avenir', Arial, sans-serif; /* Use Avenir for subheading */
   font-size: 1.25em;
+  color: #302B2D;
 }
 
 .donate-button {
   font-family: 'Avenir', Arial, sans-serif; /* Use Avenir for button */
   font-size: 1.5em;
+  color:#302B2D;
 }
 
 /* === IMPACT IMAGES === */
@@ -228,9 +231,6 @@ section {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.donation-popup {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 /* === RESPONSIVE DESIGN === */
 /* Make the website look good on phones and computers */
 
