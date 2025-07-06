@@ -122,6 +122,7 @@ section {
   width: 99%;                  /* Almost full width of the page */
   margin: 24px auto;           /* Center the box and add space above/below */
   text-align: center;          /* Center the content inside */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Style the "OUR STORY" heading inside the impact section */
@@ -140,13 +141,13 @@ section {
   background-color: #FFC907; /* Bright yellow background */
   color: #222;               /* Dark text for contrast */
   text-align: center;        /* Center the content */
-  padding: 30px 20px;        /* Padding inside the section */
+  padding: 15px 10px;        /* Padding inside the section */
 }
 
 /* Style the call-to-action heading, subheading, and button with Avenir font */
 .call-to-action h2 {
   font-family: 'Avenir', Arial, sans-serif; /* Use Avenir for heading */
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .call-to-action p {
@@ -191,6 +192,9 @@ section {
 .impact-content .image-hover-container {
   display: inline-block; /* Show images in a row */
   margin-right: 20px;    /* Space between images */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em; /* Make text inside images larger */
+  text-align: center;
 }
 
 /* Remove right margin from the last image container */
@@ -214,14 +218,19 @@ section {
   transition: background 0.3s, transform 0.2s;
   border: none;
   cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Change button color when hovered */
 .donate-button:hover {
   background-color: #159A48; /* Dark Green */
   transform: translateY(-2px) scale(1.04); /* Slight lift */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.donation-popup {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 /* === RESPONSIVE DESIGN === */
 /* Make the website look good on phones and computers */
 
