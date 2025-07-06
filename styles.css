@@ -53,9 +53,9 @@ section {
   background-position: center; /* Center the image */
   background-repeat: no-repeat;/* Do not repeat the image */
   width: 100%;                 /* Full width */
-  height: 35vh;                /* Make the hero section shorter */
+  height: 32vh;                /* Make the hero section shorter */
   margin: 0;                   /* No margin */
-  padding: 30px;               /* Padding inside the hero section */
+  padding: 39px;               /* Padding inside the hero section */
   border-radius: 0;            /* No rounded corners for the hero */
   box-shadow: none;            /* No shadow for the hero */
   position: relative;          /* For layout */
@@ -141,6 +141,22 @@ section {
   color: #222;               /* Dark text for contrast */
   text-align: center;        /* Center the content */
   padding: 30px 20px;        /* Padding inside the section */
+}
+
+/* Style the call-to-action heading, subheading, and button with Avenir font */
+.call-to-action h2 {
+  font-family: 'Avenir', Arial, sans-serif; /* Use Avenir for heading */
+  font-size: 2em;
+}
+
+.call-to-action p {
+  font-family: 'Avenir', Arial, sans-serif; /* Use Avenir for subheading */
+  font-size: 1.25em;
+}
+
+.donate-button {
+  font-family: 'Avenir', Arial, sans-serif; /* Use Avenir for button */
+  font-size: 1.5em;
 }
 
 /* === IMPACT IMAGES === */
