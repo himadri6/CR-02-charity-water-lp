@@ -21,24 +21,24 @@
     <!-- This section shows images and a heading about the charity's impact -->
     <section class="impact-story">
         <!-- Section heading -->
-        <h2>OUR STORY</h2>
+        <h2>OUR STORIES</h2>
         <div class="impact-content">
             <!-- Each image is wrapped in a container for the hover effect -->
             
             <!-- First image with hover text -->
             <div class="image-hover-container">
                 <img src="img/bg2.png" alt="Background scene 2" class="impact-image">
-                <div class="image-hover-text">In the scorching heat, Amina bends over a shallow hand-dug hole, carefully scooping murky water into a bucket—her only source for drinking, cooking, and cleaning. Surrounded by empty jerrycans and hope, she carries the weight of survival with quiet resilience.</div>
+                <div class="image-hover-text">Under the harsh sun, Amina crouched beside a shallow hand-dug hole at the old water spot. With each scoop of murky water into her bucket, she faced the same daily struggle.</div>
             </div>
             <!-- Second image with hover text -->
             <div class="image-hover-container">
                 <img src="img/water.png" alt="Amina smiling with clean water" class="impact-image">
-                <div class="image-hover-text">Amina's Clean Water</div>
+                <div class="image-hover-text">Kofi held a glass beneath the steady stream at the new community water station. As the clear water filled his glass, it symbolized more than convenience—it marked the end of long walks and the beginning of a healthier future.</div>
             </div>
             <!-- Third image with hover text -->
             <div class="image-hover-container">
                 <img src="img/bg.png" alt="Background scene" class="impact-image">
-                <div class="image-hover-text">Background Scene</div>
+                <div class="image-hover-text">Two women once walked miles each day to collect water for their families. But thanks to your support, their village now has a clean water well. Today, their children can attend school, and their families are healthier and thriving.</div>
             </div>
         </div>
     </section>
@@ -46,10 +46,58 @@
     <!-- ================= CALL TO ACTION SECTION ================= -->
     <!-- This section encourages visitors to donate -->
     <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
+        <h2>Be the Change</h2>
+        <p>Your support has the power to save lives. Every gift helps bring clean, safe water to communities in need—one step closer to a world where everyone has access.</p>
         <!-- Donate button -->
         <a href="#" class="donate-button">Donate Now</a>
     </section>
+
+    <!-- ================= DONATION POPUP ================= -->
+    <!-- Simple donation popup form (hidden by default) -->
+    <div id="donation-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:1000;">
+      <!-- Centered white rectangle for the form -->
+      <div style="background:#fff; border-radius:12px; max-width:220px; margin:100px auto 0 auto; padding:14px 10px; box-shadow:0 2px 12px rgba(0,0,0,0.15); position:relative;">
+        <!-- Close button -->
+        <button id="close-popup" style="position:absolute; top:6px; right:10px; background:none; border:none; font-size:1.1em; cursor:pointer;">&times;</button>
+        <!-- Donation form -->
+        <h3 style="margin-top:0; color:#2E9DF7; font-size:1.1em;">Donate</h3>
+        <form>
+          <!-- Name input (smaller box) -->
+          <label for="donor-name" style="display:block; margin-bottom:4px; font-size:0.95em;">Your Name:</label>
+          <input type="text" id="donor-name" name="donor-name" style="width:90%; padding:4px; margin-bottom:10px; border-radius:6px; border:1px solid #ccc; font-size:0.95em;">
+          <!-- Amount input -->
+          <label for="donation-amount" style="display:block; margin-bottom:4px; font-size:0.95em;">Amount ($):</label>
+          <input type="number" id="donation-amount" name="donation-amount" min="1" style="width:90%; padding:4px; margin-bottom:12px; border-radius:6px; border:1px solid #ccc; font-size:0.95em;">
+          <!-- Submit button -->
+          <button type="submit" style="background:#4FCB53; color:#fff; border:none; border-radius:6px; padding:7px 0; width:100%; font-weight:bold; font-size:1em; cursor:pointer;">Donate</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Simple beginner-friendly script to show/hide the popup -->
+    <script>
+      // Get the donate button and popup elements
+      var donateBtn = document.querySelector('.donate-button');
+      var popup = document.getElementById('donation-popup');
+      var closeBtn = document.getElementById('close-popup');
+
+      // Show the popup when the donate button is clicked
+      donateBtn.onclick = function(e) {
+        e.preventDefault(); // Prevent the page from jumping
+        popup.style.display = 'block';
+      };
+
+      // Hide the popup when the close button is clicked
+      closeBtn.onclick = function() {
+        popup.style.display = 'none';
+      };
+
+      // Optional: Hide the popup if user clicks outside the white box
+      popup.onclick = function(e) {
+        if (e.target === popup) {
+          popup.style.display = 'none';
+        }
+      };
+    </script>
 </body>
 </html>

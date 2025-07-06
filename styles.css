@@ -76,6 +76,7 @@ section {
   text-align: center;      /* Center the headline horizontally */
   width: 100%;             /* Take up full width */
   margin: 0;               /* Remove default margin */
+  font-family: 'Proxima Nova', Arial, sans-serif; /* Use Proxima Nova for headline */
 }
 
 /* Make the main headline pop out on hover */
@@ -97,6 +98,7 @@ section {
   text-align: center;      /* Center the subheadline */
   width: 100%;             /* Take up full width */
   margin: 0;               /* Remove default margin */
+  font-family: 'Proxima Nova', Arial, sans-serif; /* Use Proxima Nova for subheadline */
 }
 
 /* Make the subheadline pop out on hover */
