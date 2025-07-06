@@ -43,7 +43,7 @@ section {
 
 /* Hero Section Styles */
 .hero {
-  background-image: url('img/bg.png'); /* Use your headline image */
+  background-image: url('img/headlinepic.png'); /* Use your headline image */
   background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
@@ -61,26 +61,26 @@ section {
   /* The image will now appear shorter and content is centered from all sides */
 }
 
-/* Make the headline bold, white, and centered */
+/* Make the headline bold, black, and centered */
 .hero h1 {
   font-size: 2.5em;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
-  color: #fff;              /* Make the headline white */
-  text-align: center;       /* Center the headline horizontally */
+  text-shadow: none;         /* Remove shadow for a clean look */
+  color: #000;               /* Make the headline black */
+  text-align: center;        /* Center the headline horizontally */
   width: 100%;
   margin: 0;
 }
 
-/* Style the subheadline: white and centered */
+/* Style the subheadline: black and centered */
 .hero p {
   font-size: 1.2em;
   margin-top: 0;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.12);
-  color: #fff;              /* Make the subheadline white */
-  text-align: center;       /* Center the subheadline horizontally */
+  text-shadow: none;         /* Remove shadow for a clean look */
+  color: #000;               /* Make the subheadline black */
+  text-align: center;        /* Center the subheadline horizontally */
   width: 100%;
   margin: 0;
 }
@@ -211,7 +211,17 @@ section {
     margin: 0 auto;
   }
 
+  /* Style for the impact image to move it to the left */
+  .impact-content {
+    /* Use text-align to move the image to the left */
+    text-align: left; /* Align content to the left */
+    padding-left: 20px; /* Add a little space from the edge */
+  }
+
   .impact-image {
-    width: 300px;
+    display: block;    /* Make the image a block element */
+    margin: 0;         /* Remove default margin */
+    max-width: 100%;   /* Make sure the image is responsive */
+    height: auto;      /* Keep the image's aspect ratio */
   }
 }
