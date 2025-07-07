@@ -81,7 +81,7 @@ section {
 
 /* Make the main headline pop out on hover */
 .hero h1:hover {
-  color: #2E9DF7;           /* Change text color to blue */
+  color: #7BAFAB;           /* Change text color to blue */
   transform: scale(1.08);   /* Make the text a bit bigger */
   transition: 
     color 0.3s,             /* Smooth color change */
@@ -103,7 +103,7 @@ section {
 
 /* Make the subheadline pop out on hover */
 .hero p:hover {
-  color: #2E9DF7;           /* Change text color to blue */
+  color: #567f7c;           /* Change text color to blue */
   transform: scale(1.05);   /* Make the text a bit bigger */
   transition: 
     color 0.3s, 
@@ -127,7 +127,7 @@ section {
 
 /* Style the "OUR STORY" heading inside the impact section */
 .impact-story h2 {
-  color: #2E9DF7;        /* Brand blue color */
+  color: #97C1BD;        /* Brand blue color */
   text-align: center;    /* Center the heading */
   margin-top: 0;         /* Remove extra space above */
   margin-bottom: 24px;   /* Space below the heading */
@@ -138,7 +138,7 @@ section {
 /* === CALL TO ACTION SECTION === */
 /* Styles for the yellow donation section at the bottom */
 .call-to-action {
-  background-color: #FFC907; /* Bright yellow background */
+  background-color: #C8AE9D; /* Bright yellow background */
   color: #302B2D;               /* Dark text for contrast */
   text-align: center;        /* Center the content */
   padding: 10px 10px;        /* Padding inside the section */
